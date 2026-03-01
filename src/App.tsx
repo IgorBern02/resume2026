@@ -14,6 +14,7 @@ export default function App() {
           <p>Praia Grande - SP</p>
           <p>Email: igudevfrontend@gmail.com</p>
           <p>GitHub: github.com/IgorBern02</p>
+          <p>Portfolio: https://igorbern02.github.io/portfolio_2025/</p>
         </div>
       </header>
 
