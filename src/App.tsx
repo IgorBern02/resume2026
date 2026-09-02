@@ -5,67 +5,66 @@ export default function App() {
   return (
     <main className="max-w-3xl mx-auto p-8 font-sans">
       {/* Header */}
-      <header className="mb-10">
+      <header className="mb-5">
         <h1 className="text-3xl font-bold">Igor Bernardes</h1>
-        <p className="text-gray-600">
-          Desenvolvedor Front-End | React | TypeScript
-        </p>
+
         <div className="text-sm text-gray-700 mt-2">
           <p>Praia Grande - SP</p>
-          <p>Email: igudevfrontend@gmail.com</p>
-          <p>GitHub: github.com/IgorBern02</p>
-          <p>Portfolio: https://portfolio-2025-sllq.vercel.app/</p>
+          <p>Telefone: (13) 99124-6604</p>
+          <p>Email: igor.bernardes2@gmail.com</p>
         </div>
       </header>
 
       {/* Resumo */}
       <Section title="Resumo Profissional">
         <p className="text-sm text-gray-800">
-          Desenvolvedor Front-End com foco em aplicações modernas utilizando
-          React e TypeScript. Experiência prática em SPAs, consumo de APIs REST
-          e organização de código com boas práticas de componentização.
+          Atuar em área operacional ou administrativa, contribuindo com
+          organização, responsabilidade e comprometimento. Busco oportunidade
+          para crescimento profissional e desenvolvimento contínuo.
         </p>
       </Section>
 
-      {/* Stack */}
-      <Section title="Stack Técnica">
-        <ul className="text-sm space-y-1">
-          <li>
-            <strong>Linguagens:</strong> JavaScript, TypeScript, HTML5, CSS3
-          </li>
-          <li>
-            <strong>Frontend:</strong> React, Vite, Tailwind CSS
-          </li>
-          <li>
-            <strong>Backend:</strong> Node.js, Express
-          </li>
-          <li>
-            <strong>Ferramentas:</strong> Git, GitHub, Vercel
-          </li>
-        </ul>
-      </Section>
-
       {/* Projetos */}
-      <Section title="Projetos Relevantes">
+      <Section title="Experiência Profissional">
         <Project
-          title="Sistema Full Stack – React + Node"
-          description="Aplicação completa com API REST em Node.js e frontend em React, estruturada de forma modular."
-        />
-        <Project
-          title="Portfólio SPA – React + TypeScript"
-          description="Aplicação single-page com navegação dinâmica, componentização e deploy em produção."
-        />
-        <Project
-          title="API de Carros – Node.js"
-          description="API RESTful com CRUD completo e organização por camadas."
+          title="Repositor de Estoque - Caixa"
+          local="Supermercado Empório Caiçara  - Praia Grande, SP"
+          date="2020 - 2021 (4 meses)"
+          activies={[
+            "Organização de prateleiras e reposição de produtos",
+            "Controle de estoque e comunicação de necessidades de reposição",
+            "Apoio no caixa durante períodos de alta demanda",
+          ]}
+          description="Responsável por organizar e repor mercadorias, garantindo a disponibilidade dos produtos para os clientes."
         />
       </Section>
+      <Project
+        title="Auxiliar / Montador de Móveis - Marcenaria"
+        local="Praia Grande, SP e São Paulo, SP"
+        date="2021 - 2022"
+        activies={[
+          "Preparação e organização de materiais e ferramentas",
+          "Apoio e posteriormente execução da instalação de móveis",
+          "Lixamento e acabamento para garantia de qualidade",
+          "Organização do ambiente de trabalho e cumprimento de prazos",
+        ]}
+        description="Iniciei como auxiliar e evoluí para montador de móveis, atuando na preparação, montagem e acabamento de móveis sob medida."
+      />
 
       {/* Formação */}
       <Section title="Formação">
         <p className="text-sm">
           Tecnólogo em Análise e Desenvolvimento de Sistemas – UNIP (2024)
         </p>
+      </Section>
+
+      {/* Habilidades */}
+      <Section title="Habilidades">
+        <ul className="list-disc pl-5 text-sm text-gray-800">
+          <li>Organização e atenção aos detalhes</li>
+          <li>Responsabilidade e comprometimento</li>
+          <li>Trabalho em equipe e comunicação</li>
+        </ul>
       </Section>
     </main>
   );
